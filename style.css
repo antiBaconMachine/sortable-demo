@@ -1,0 +1,55 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 3em 0;
+  padding: 0;
+}
+
+.step_list {
+  border: 1px solid black;
+  min-width: 200px;
+  float: left;
+}
+
+.card {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.5);
+  padding: 5px;
+  background: white;
+  cursor:pointer;
+  }
+  
+.card-holder {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.5);
+  padding: 5px;
+  height: 70px;
+  width: 480px;
+}    
+
+.outer {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+
+.title {
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: .3em;
+  margin: 0 0 .25em;
+  text-align: center;
+  text-indent: .3em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 500px) {
+
+  body {
+    margin: 2em 0 4em 0;
+  }
+}

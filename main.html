@@ -1,0 +1,35 @@
+<head>
+  <title>sortable demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  {{>outer}}
+</body>
+
+<template name="outer">
+  <div class="outer">
+    <a href="#" class="addList">add</a>
+    <a href="#" class="reset">reset</a>
+    <h1 class="title">Sortable demo</h1>
+    {{#each list}}
+      {{> myList}}
+    {{/each}}
+  </div>
+</template>
+
+<template name="myList">
+  <div class="step_list">
+    <h2>{{name}}</h2>
+    {{#each card}}
+      {{> card_template}}          
+    {{/each}}
+  </div>
+</template>
+
+<template name="card_template">
+  <div class="card {{empty}}" id="{{_id}}">
+       <!--content-->   <h3>{{name}}</h3>   
+  </div>
+</template>
